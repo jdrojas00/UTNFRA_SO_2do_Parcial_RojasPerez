@@ -1,0 +1,42 @@
+2024-06-24 18:08:06,499 p=3444395 u=upszot n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-06-24 18:08:06,598 p=3444395 u=upszot n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:06,609 p=3444395 u=upszot n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,746 p=3444395 u=upszot n=ansible | ok: [localhost]
+2024-06-24 18:08:07,775 p=3444395 u=upszot n=ansible | TASK [include_role : 2do_parcial] ***********************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,805 p=3444395 u=upszot n=ansible | TASK [2do_parcial : debug] ******************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,817 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-06-24 18:08:07,836 p=3444395 u=upszot n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,851 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 16:37:15,048 p=11801 u=vagrant n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-18 16:37:15,050 p=11801 u=vagrant n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match
+'all'
+
+2024-11-18 16:37:15,200 p=11801 u=vagrant n=ansible | PLAY [localhost] *********************************************************************************************************
+2024-11-18 16:37:15,207 p=11801 u=vagrant n=ansible | TASK [Gathering Facts] ***************************************************************************************************
+2024-11-18 16:37:16,088 p=11801 u=vagrant n=ansible | ok: [localhost]
+2024-11-18 16:37:16,100 p=11801 u=vagrant n=ansible | TASK [include_role : 2do_parcial] ****************************************************************************************
+2024-11-18 16:37:16,126 p=11801 u=vagrant n=ansible | TASK [2do_parcial : Crear directorios en /tmp] ***************************************************************************
+2024-11-18 16:37:16,393 p=11801 u=vagrant n=ansible | changed: [localhost] => (item=2do_parcial)
+2024-11-18 16:37:16,399 p=11801 u=vagrant n=ansible | TASK [2do_parcial : Crear subdirectorios en /tmp/2do_parcial] ************************************************************
+2024-11-18 16:37:16,576 p=11801 u=vagrant n=ansible | changed: [localhost] => (item=alumno)
+2024-11-18 16:37:16,728 p=11801 u=vagrant n=ansible | changed: [localhost] => (item=equipo)
+2024-11-18 16:37:16,735 p=11801 u=vagrant n=ansible | TASK [2do_parcial : Crear archivo datos_alumno.txt] **********************************************************************
+2024-11-18 16:37:17,196 p=11801 u=vagrant n=ansible | changed: [localhost]
+2024-11-18 16:37:17,202 p=11801 u=vagrant n=ansible | TASK [2do_parcial : Crear archivo datos_equipo.txt] **********************************************************************
+2024-11-18 16:37:17,499 p=11801 u=vagrant n=ansible | changed: [localhost]
+2024-11-18 16:37:17,506 p=11801 u=vagrant n=ansible | TASK [2do_parcial : Modificar sudoers para usuarios de 2PSupervisores] ***************************************************
+2024-11-18 16:37:17,784 p=11801 u=vagrant n=ansible | changed: [localhost]
+2024-11-18 16:37:17,789 p=11801 u=vagrant n=ansible | TASK [Otra tarea] ********************************************************************************************************
+2024-11-18 16:37:17,801 p=11801 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-18 16:37:17,812 p=11801 u=vagrant n=ansible | PLAY RECAP ***************************************************************************************************************
+2024-11-18 16:37:17,813 p=11801 u=vagrant n=ansible | localhost                  : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
